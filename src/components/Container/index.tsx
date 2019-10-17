@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import styles from './styles.scss';
@@ -9,10 +10,11 @@ interface LandingInterface {
     bgColor: string,
 }
 
-const Container : React.FC<LandingInterface> = ({ currentPage, bgColor }) => {
+const Container : React.FC<LandingInterface> = ({ currentPage, bgColor, children }) => {
     return (
-        <div className={ classnames(bgColor, styles.container) }>
+        <div className={ classNames(bgColor, styles.container) }>
             <Navbar selected={ currentPage }/>
+            { children }
             <Footer />
         </div>
     )
