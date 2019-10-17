@@ -1,5 +1,7 @@
-// Add theme colors as variables
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+// Theme colors:
 $black : #363635;
 $white : #F6F8FF;
 $pink : #f2a7a6;
@@ -10,3 +12,7 @@ $purple : #aaa2db;
 $yellow : #fadb86;
 $web-padding: 150px; // left, right padding
 $mob-padding: 40px;
+
+// Theme fonts:
+$heading-font: 'Bungee';
+$text-font: 'Montserrat';
