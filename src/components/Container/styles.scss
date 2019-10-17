@@ -1,0 +1,11 @@
+// web styles
+.container {
+    padding: 0px 150px;
+}
+
+// mobile styles
+@media only screen and (max-width: 800px) {
+    .container {
+        padding: 0px 40px;
+    }
+}
