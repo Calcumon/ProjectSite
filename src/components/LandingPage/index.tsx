@@ -74,10 +74,13 @@ const LandingPage : React.FC = () => {
                     <button>TRY THE APP > </button>
                 </div>
             </div>
+            <div className="banner-divider"></div>
+            {/* TODO: add slanted line divider */}
             { LandingPageFeatureData.map(({ title, description, image, i }) => <LandingPageFeature title={ title } 
                                                                                                    description={ description } 
                                                                                                    image={ image }
-                                                                                                   i={ i } />
+                                                                                                   i={ i } 
+                                                                                                   key={ i } />
                                             ) }
         </Container>
     )
