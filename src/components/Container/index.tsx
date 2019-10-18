@@ -1,8 +1,8 @@
 import React from 'react';
-import classNames from 'classnames';
+import classnames from 'classnames';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import styles from './styles.scss';
+import './styles.scss';
 
 // TODO: What will be in our LoginInterface?
 interface ContainerInterface {
@@ -12,9 +12,9 @@ interface ContainerInterface {
 
 const Container : React.FC<ContainerInterface> = ({ currentPage, bgColor, children }) => {
     return (
-        <div className={ classNames(bgColor, styles.container) }>
+        <div className={ classnames(bgColor, "full-height") }>
             <Navbar selected={ currentPage }/>
-            { children }
+            <div className="container">{ children }</div>
             <Footer />
         </div>
     )

@@ -17,6 +17,11 @@ $mob-padding: 40px;
 $heading-font: 'Bungee';
 $text-font: 'Montserrat';
 
+/* set general font style */
+* {
+    font-family: $text-font;
+}
+
 /* background styles: */
 .blackbg {
     background-color: $black;

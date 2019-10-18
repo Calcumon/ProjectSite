@@ -1,2 +1,35 @@
+@import '../../../../common.scss';
 
-$navbar-bg : linear-gradient(rgba(246,248,255,1), rgba(246,248,255.1))
+$navbar-bg : linear-gradient(rgba(246,248,255,1), rgba(246,248,255,0.1));
+
+.navbar-container {
+    background: $navbar-bg;
+    width: 100%;
+    
+}
+
+.navbar {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px $web-padding;
+    padding-top: 40px;
+    list-style-type: None;
+    font-family: $text-font;
+}
+
+.navbar img {
+    width: 300px;
+}
+
+// mobile styles
+@media only screen and (max-width: 900px) {
+    .navbar {
+        padding: 20px $mob-padding;
+        padding-top: 24px;
+    }
+
+    .navbar img {
+        width: 200px;
+    }
+}

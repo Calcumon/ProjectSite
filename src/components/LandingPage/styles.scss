@@ -1,1 +1,44 @@
-@import url('../../common.scss');
+@import '../../common.scss';
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannerMonster {
+    width: 250px;
+    float: left;
+    margin-top: -4em;
+}
+
+.banner h1 {
+    font-family: $heading-font;
+    font-size: 80px;
+    color: darken($purple, 10%);
+    text-align: right;
+}
+
+.banner button {
+    float: right;
+    padding: 20px 40px;
+    background-color: $pink;
+    color: $white;
+    font-size: 35px;
+    font-weight: 400;
+    border: none;
+}
+
+// mobile styles
+@media only screen and (max-width: 800px) {
+    .bannerMonster {
+        width: 100px;
+        float: left;
+        margin-top: -2em;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        color: darken($purple, 10%);
+        text-align: right;
+    }
+}
