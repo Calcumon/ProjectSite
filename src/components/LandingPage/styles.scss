@@ -1,8 +1,10 @@
 @import '../../common.scss';
 
+/* banner */
 .banner {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .bannerMonster {
@@ -41,4 +43,30 @@
         color: darken($purple, 10%);
         text-align: right;
     }
+}
+
+/* feature */
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+    margin-bottom: 30px;
+}
+
+.feature img {
+    width: 300px;
+}
+
+.featureText {
+    margin-left: 60px;
+}
+
+.featureText h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.featureText p {
+    font-size: 24px;
 }
