@@ -1,14 +1,12 @@
 import React from 'react';
+import Container from '../Container'
+import styles from './styles.scss'
 
-// TODO: What will be in our LoginInterface?
-interface LandingInterface {
-}
-
-const LandingPage : React.FC<LandingInterface> = () => {
+const LandingPage : React.FC = () => {
     return (
-        <div>
+        <Container bgColor={ styles.green } currentPage="landing">
             <p> Hello World </p>
-        </div>
+        </Container>
     )
 }
 

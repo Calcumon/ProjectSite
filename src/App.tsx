@@ -7,7 +7,6 @@ import LandingPage from './components/LandingPage';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
       <Router>
         <Switch>
           <Route exact path="/">
@@ -15,8 +14,6 @@ const App: React.FC = () => {
           </Route>
         </Switch>
     </Router>
-
-      </header>
     </div>
   );
 }
