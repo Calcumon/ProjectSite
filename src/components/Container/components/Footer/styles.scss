@@ -1,2 +1,30 @@
+@import '../../../../common.scss';
+$footer-bg : linear-gradient( rgba(246, 248, 255, 0.1), rgba(246, 248, 255, 1));
 
-$footer-bg : linear-gradient( rgba(246, 248, 255, 0.1), rgba(246, 248, 255, 1))
+.footer-container {
+    background: $footer-bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    // width: 100%;
+    padding: 40px 0 20px;
+    margin-top: 90px;
+}
+
+.footer-container h2 {
+    font-family: $heading-font;
+}
+
+.footer-container input {
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+}
+
+.footer-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: $purple;
+    font-weight: bolder;
+    font-size: 18px;
+}

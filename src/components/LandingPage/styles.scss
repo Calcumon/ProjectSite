@@ -6,13 +6,14 @@
     justify-content: space-between;
     position: relative;
     z-index: 2;
-    margin: 130px 40px;
+    margin: 90px 40px;
 }
 
 .bannerMonster {
-    width: 250px;
+    width: 278px;
     float: left;
-    margin-top: -4em;
+    margin-top: -10em;
+    margin-bottom: 4em;
 }
 
 .banner h1 {
@@ -69,9 +70,10 @@
 .feature {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 30px 80px;
     margin-bottom: 30px;
+    height: 300px;
 }
 
 .feature img {
@@ -80,6 +82,7 @@
 
 .featureText {
     margin-left: 60px;
+    width: 50%;
 }
 
 .featureText h2 {
