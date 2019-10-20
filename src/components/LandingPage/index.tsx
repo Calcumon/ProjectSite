@@ -13,7 +13,7 @@ interface LandingPageFeatureProps {
     i: number;
 }
 
-const LandingPageFeature : React.FC<LandingPageFeatureProps> = ({ title, description, image, i }) => {
+export const LandingPageFeature : React.FC<LandingPageFeatureProps> = ({ title, description, image, i }) => {
     if (i%2 === 0) {
         return <div className="feature bluebg">
             <div className="featureText">
