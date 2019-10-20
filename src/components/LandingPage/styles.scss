@@ -36,16 +36,51 @@
 .banner-divider {
     border-top: 2px solid $purple;
     margin-bottom: 150px;
-    transform: translateY(-172px) translateX(5px) rotate(-7deg);
+    transform: translateY(-155px) translateX(5px) rotate(-7deg);
     margin-right: 40px;
 }
 
+
+// ipad styles
+@media only screen and (max-width: 1350px) {
+    
+    .bannerMonster {
+        width: 200px;
+        float: left;
+        margin-top: -2em;
+    }
+
+    .banner h1 {
+        font-size: 70px;
+        color: darken($purple, 10%);
+        text-align: right;
+    }
+
+    .banner button {
+        float: right;
+        padding: 20px 40px;
+        background-color: $pink;
+        color: $white;
+        font-size: 30px;
+        font-weight: 600;
+        border: none;
+    }
+
+}
+
+
 // mobile styles
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
+    .banner {
+        margin: 40px 40px 0;
+    }
+
     .bannerMonster {
         width: 100px;
         float: left;
         margin-top: -2em;
+        margin-left: -25px;
+        margin-right: 20px;
     }
 
     .banner h1 {
@@ -56,13 +91,20 @@
 
     .banner button {
         float: right;
-        padding: 20px 40px;
+        padding: 20px;
         background-color: $pink;
         color: $white;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
         border: none;
     }
+
+    .banner-divider {
+        border-top: 2px solid $purple;
+        margin-bottom: 50px;
+        transform: translateY(-50px) translateX(5px) rotate(-7deg);
+    }
+    
 
 }
 
@@ -72,7 +114,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 30px 80px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     height: 300px;
 }
 
@@ -92,4 +134,32 @@
 
 .featureText p {
     font-size: 24px;
+}
+
+// mobile styles
+@media only screen and (max-width: 950px) {
+    .feature {
+        // flex-direction: column-reverse;
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 120px;
+    }
+
+    .feature img {
+        display: none;
+        width: 100px;
+    }
+
+    .featureText {
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .featureText h2 {
+        font-size: 20px;
+    }
+
+    .featureText p {
+        font-size: 14px;
+    }
 }

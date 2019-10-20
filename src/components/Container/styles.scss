@@ -6,8 +6,15 @@
     background-color: $green;
 }
 
+// iPad styles
+@media only screen and (max-width: 1350px) {
+    .container {
+        padding: 0 $ipad-padding;
+    }
+}
+
 // mobile styles
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
     .container {
         padding: 0 $mob-padding;
     }
