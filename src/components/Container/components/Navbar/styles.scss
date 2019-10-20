@@ -23,7 +23,7 @@ $navbar-bg : linear-gradient(rgba(246,248,255,1), rgba(246,248,255,0.1));
 }
 
 // mobile styles
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: $mob-size) {
     .navbar {
         padding: 20px $mob-padding;
         padding-top: 24px;

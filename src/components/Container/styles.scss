@@ -3,18 +3,17 @@
 // web styles
 .container {
     padding: 0 $web-padding;
-    background-color: $green;
 }
 
 // iPad styles
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: $ipad-size) {
     .container {
         padding: 0 $ipad-padding;
     }
 }
 
 // mobile styles
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: $mob-size) {
     .container {
         padding: 0 $mob-padding;
     }

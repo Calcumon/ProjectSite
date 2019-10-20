@@ -18,6 +18,10 @@ $mob-padding: 30px;
 $heading-font: 'Bungee';
 $text-font: 'Montserrat';
 
+/* screen max-width sizes */
+$ipad-size: 1350px;
+$mob-size: 950px;
+
 /* set general font style */
 * {
     font-family: $text-font;

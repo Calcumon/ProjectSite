@@ -42,7 +42,7 @@
 
 
 // ipad styles
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: $ipad-size) {
     
     .bannerMonster {
         width: 200px;
@@ -70,7 +70,7 @@
 
 
 // mobile styles
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: $mob-size) {
     .banner {
         margin: 40px 40px 0;
     }
@@ -137,7 +137,7 @@
 }
 
 // mobile styles
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: $mob-size) {
     .feature {
         // flex-direction: column-reverse;
         padding: 10px;
