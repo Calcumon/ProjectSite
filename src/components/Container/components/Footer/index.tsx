@@ -1,11 +1,7 @@
 import React from 'react';
 
 import './styles.scss';
-// TODO: What will be in our LoginInterface?
-interface FooterInterface {
-}
-
-const Footer : React.FC<FooterInterface> = () => {
+const Footer : React.FC = () => {
     return (
         <div className="footer-container">
             <h2>WE'RE LAUNCHING SOON!</h2>
