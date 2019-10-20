@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './styles.scss';
 
-// TODO: What will be in our LoginInterface?
 interface ContainerInterface {
     currentPage: string,
     bgColor: string,
