@@ -15,16 +15,51 @@ $footer-bg : linear-gradient( rgba(246, 248, 255, 0.1), rgba(246, 248, 255, 1));
     font-family: $heading-font;
 }
 
-.footer-container input {
+.footer-container input, .footer-container button {
     padding: 10px 20px;
     border: none;
     font-size: 18px;
 }
 
 .footer-container button {
-    padding: 10px 20px;
-    border: none;
     background-color: $purple;
     font-weight: bolder;
-    font-size: 18px;
+}
+
+// iPad styles
+@media only screen and (max-width: $ipad-size) {
+    
+    .footer-container {
+        margin-top: 40px;
+    }
+
+    .footer-container h2 {
+        font-size: 20px;
+    }
+
+    .footer-container input, .footer-container button {
+        font-size: 14px;
+    }
+}
+
+// mobile styles
+@media only screen and (max-width: $mob-size) {
+        
+    .footer-container {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .footer-container h2 {
+        font-size: 12px;
+    }
+
+    .footer-container input {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .footer-container button  {
+        padding: 10px;
+        font-size: 10px;
+    }
 }
