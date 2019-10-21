@@ -72,14 +72,14 @@
 // mobile styles
 @media only screen and (max-width: $mob-size) {
     .banner {
-        margin: 40px 40px 0;
+        margin: 40px 20px 0;
     }
 
     .bannerMonster {
         width: 100px;
         float: left;
         margin-top: -2em;
-        margin-left: -25px;
+        margin-left: -3em;
         margin-right: 20px;
     }
 
@@ -87,6 +87,7 @@
         font-size: 30px;
         color: darken($purple, 10%);
         text-align: right;
+        margin-left: -.5em;
     }
 
     .banner button {
