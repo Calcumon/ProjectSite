@@ -84,10 +84,6 @@
 
     }
 
-    .content-wrapper {
-        padding: 20px $mob-padding;
-    }
-
 }
 
 // content
@@ -109,4 +105,27 @@
 .content-wrapper .intro p {
     font-size: 24px;
     padding: 0 20px;
+}
+
+
+// mobile styles
+@media only screen and (max-width: $mob-size) {
+    .content-wrapper {
+        padding: 20px $mob-padding;
+    }
+
+    .content-wrapper .intro {
+        margin-bottom: 40px;
+    }
+    
+    .content-wrapper .intro h2 {
+        font-size: 26px;
+        text-align: left;
+    }
+    
+    
+    .content-wrapper .intro p {
+        font-size: 18px;
+        padding: 0;
+    }
 }
