@@ -12,7 +12,8 @@ const Container : React.FC<ContainerInterface> = ({ currentPage, bgColor, childr
     return (
         <div className={ bgColor }>
             <Navbar selected={ currentPage }/>
-            <div className="container">{ children }</div>
+            { children }
+            {/* <div className="container">{ children }</div> */}
             <Footer />
         </div>
     )
