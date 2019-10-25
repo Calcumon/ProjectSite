@@ -6,36 +6,7 @@ import friendsIcon from '../../assets/features/play-with-friends.png';
 import shopingIcon from '../../assets/features/shop.png';
 
 import Container from '../Container';
-
-
-interface LandingPageFeatureProps {
-    title: string;
-    description: string;
-    image: string;
-    i: number;
-}
-
-export const LandingPageFeature : React.FC<LandingPageFeatureProps> = ({ title, description, image, i }) => {
-    if (i%2 === 0) {
-        return <div className="feature hardwhitebg">
-            <div className="featureText">
-                <h2>{ title }</h2>
-                <p>{ description }</p>
-            </div>
-            <img src={ image } alt={ title }/>
-        </div>
-    }
-    
-    return (
-        <div className="feature hardwhitebg">
-            <img src={ image } alt={ title }/>
-            <div className="featureText">
-                <h2>{ title }</h2>
-                <p>{ description }</p>
-            </div>
-        </div>
-    )
-}
+import LandingPageFeature, {LandingPageFeatureProps} from './components/LandingPageFeature'
 
 
 const LandingPage : React.FC = () => {
@@ -77,18 +48,20 @@ const LandingPage : React.FC = () => {
                 </div>
             </div>
             <div className="banner-divider"></div>
-            <div className="intro">
-                <h2>Creative learning is our future.</h2>
-                <p>some phrase here about stuff you got this oo.h.agwrg awgwa
-                    wagrawgawrga wagwefw wagwf wgwfwa wefgwfweagwag waawgwarg 
-                    wagrwa
-                </p>
+            <div className="content-wrapper">
+                <div className="intro">
+                    <h2>Creative learning is our future.</h2>
+                    <p>some phrase here about stuff you got this oo.h.agwrg awgwa
+                        wagrawgawrga wagwefw wagwf wgwfwa wefgwfweagwag waawgwarg 
+                        wagrwa
+                    </p>
+                </div>
+                { LandingPageFeatureData.map(({ title, description, image, i }) => <LandingPageFeature title={ title } 
+                                                                                                    description={ description } 
+                                                                                                    image={ image }
+                                                                                                    i={ i } 
+                                                                                                    key={ i } /> )}
             </div>
-            { LandingPageFeatureData.map(({ title, description, image, i }) => <LandingPageFeature title={ title } 
-                                                                                                   description={ description } 
-                                                                                                   image={ image }
-                                                                                                   i={ i } 
-                                                                                                   key={ i } /> )}
         </Container>
     )
 }
