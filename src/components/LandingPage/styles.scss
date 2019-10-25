@@ -1,0 +1,165 @@
+@import '../../common.scss';
+
+/* banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    margin: 90px 40px;
+}
+
+.bannerMonster {
+    width: 278px;
+    float: left;
+    margin-top: -10em;
+    margin-bottom: 4em;
+}
+
+.banner h1 {
+    font-family: $heading-font;
+    font-size: 80px;
+    color: darken($purple, 10%);
+    text-align: right;
+}
+
+.banner button {
+    float: right;
+    padding: 20px 40px;
+    background-color: $pink;
+    color: $white;
+    font-size: 35px;
+    font-weight: 600;
+    border: none;
+}
+
+.banner-divider {
+    border-top: 2px solid $purple;
+    margin-bottom: 150px;
+    transform: translateY(-155px) translateX(5px) rotate(-7deg);
+    margin-right: 40px;
+}
+
+
+// ipad styles
+@media only screen and (max-width: $ipad-size) {
+    
+    .bannerMonster {
+        width: 200px;
+        float: left;
+        margin-top: -2em;
+    }
+
+    .banner h1 {
+        font-size: 70px;
+        color: darken($purple, 10%);
+        text-align: right;
+    }
+
+    .banner button {
+        float: right;
+        padding: 20px 40px;
+        background-color: $pink;
+        color: $white;
+        font-size: 30px;
+        font-weight: 600;
+        border: none;
+    }
+
+}
+
+
+// mobile styles
+@media only screen and (max-width: $mob-size) {
+    .banner {
+        margin: 40px 20px 0;
+    }
+
+    .bannerMonster {
+        width: 100px;
+        float: left;
+        margin-top: -2em;
+        margin-left: -3em;
+        margin-right: 20px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+        color: darken($purple, 10%);
+        text-align: right;
+        margin-left: -.5em;
+    }
+
+    .banner button {
+        float: right;
+        padding: 20px;
+        background-color: $pink;
+        color: $white;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+    }
+
+    .banner-divider {
+        border-top: 2px solid $purple;
+        margin-bottom: 50px;
+        transform: translateY(-50px) translateX(5px) rotate(-7deg);
+    }
+    
+
+}
+
+/* feature */
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 80px;
+    margin-bottom: 40px;
+    height: 300px;
+}
+
+.feature img {
+    width: 300px;
+}
+
+.featureText {
+    margin-left: 60px;
+    width: 50%;
+}
+
+.featureText h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.featureText p {
+    font-size: 24px;
+}
+
+// mobile styles
+@media only screen and (max-width: $mob-size) {
+    .feature {
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 120px;
+    }
+
+    .feature img {
+        display: none;
+        width: 100px;
+    }
+
+    .featureText {
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .featureText h2 {
+        font-size: 20px;
+    }
+
+    .featureText p {
+        font-size: 14px;
+    }
+}
