@@ -9,7 +9,7 @@ const LandingPage : React.FC = () => {
     return (
         <Container currentPage="landing" bgColor="whitebg">
             <div className="banner">
-                <img className={"bannerMonster"} src={ cutie } alt="A cute little monster"/>
+                <img src={ cutie } alt="A cute little monster"/>
                 <div>
                     <h1>MATH, BUT IN A</h1>
                     <h1>PLAYGROUND</h1>

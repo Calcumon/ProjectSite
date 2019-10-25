@@ -34,3 +34,52 @@
     font-weight: 600;
     border: none;
 }
+
+
+// iPad styles
+@media only screen and (max-width: $ipad-size) {
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        background-color: $yellow-light;
+    }
+
+    .banner img {
+        width: 200px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        color: darken($purple, 10%);
+        text-align: right;
+    }
+
+    .banner button {
+        font-size: 20px;
+    }
+
+}
+
+// mobile styles
+@media only screen and (max-width: $mob-size) {
+    .banner {
+        padding: 40px $mob-padding 0;
+    }
+
+    .banner img {
+        width: 80px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+        color: darken($purple, 10%);
+        text-align: right;
+    }
+
+    .banner button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+
+}
