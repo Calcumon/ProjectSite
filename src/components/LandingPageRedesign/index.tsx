@@ -25,13 +25,13 @@ const LandingPage : React.FC = () => {
         },
         {
             title: "Together, we learn",
-            description: "Kids can compete with their friends with our multiplayer option! (Coming soon)",
+            description: "Kids can compete with their friends with our multiplayer option!",
             image: friendsIcon,
             i: 2,
         },
         {
             title: "Shopping? Ooh.",
-            description: "Kids can customize their characters using game currency! (Coming Soon)",
+            description: "Kids can customize their characters using game currency!",
             image: shopingIcon,
             i: 3,
         }
