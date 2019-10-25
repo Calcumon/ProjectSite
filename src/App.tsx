@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import LandingPageRedesign from './components/LandingPageRedesign';
+import LandingPage from './components/LandingPage';
 
 const App: React.FC = () => {
   return (
     <Router>
         <Switch>
           <Route exact path="/">
-            <LandingPageRedesign />
+            <LandingPage />
           </Route>
         </Switch>
     </Router>

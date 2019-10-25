@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import blackLogo from '../../../../assets/logo/black.png';
-import purpleLogo from '../../../../assets/logo/black.png';
+import purpleLogo from '../../../../assets/logo/purple.png';
 
 // TODO: What will be in our LoginInterface?
 interface NavbarInterface {
