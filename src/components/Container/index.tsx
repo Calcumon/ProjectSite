@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import './styles.scss';
 
 interface ContainerInterface {
     currentPage: string,
@@ -13,7 +12,6 @@ const Container : React.FC<ContainerInterface> = ({ currentPage, bgColor, childr
         <div className={ bgColor }>
             <Navbar selected={ currentPage }/>
             { children }
-            {/* <div className="container">{ children }</div> */}
             <Footer />
         </div>
     )
