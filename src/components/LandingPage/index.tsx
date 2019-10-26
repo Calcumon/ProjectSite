@@ -51,9 +51,10 @@ const LandingPage : React.FC = () => {
             <div className="content-wrapper">
                 <div className="intro">
                     <h2>Creative learning is our future.</h2>
-                    <p>some phrase here about stuff you got this oo.h.agwrg awgwa
-                        wagrawgawrga wagwefw wagwf wgwfwa wefgwfweagwag waawgwarg 
-                        wagrwa
+                    <p>Calcumon is an interactive learning platform designed for children and teens. 
+                        It covers a wide range of mathematical topics from simple addition and 
+                        subtraction to complex linear equations. Calcumon employs classic gamification 
+                        techniques to encourage self-motivation and promote math practice outside of the classroom.
                     </p>
                 </div>
                 { LandingPageFeatureData.map(({ title, description, image, i }) => <LandingPageFeature title={ title } 
