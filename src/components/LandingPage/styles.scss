@@ -1,8 +1,8 @@
 @import '../../common.scss';
 
 .wrapper {
-    height: 90vh;
-    background: url("./images/bottomCurve.svg") bottom right no-repeat, white;
+    height: 85vh;
+    background: url("./images/bottomCurve.svg") bottom left no-repeat, white;
 }
 // banner
 .banner {
@@ -12,7 +12,7 @@
 }
 
 .banner img {
-    width: 750px;
+    width: 730px;
     position: absolute;
     top: 40px;
     left: -270px;
@@ -27,7 +27,9 @@
 
 .banner .heading-top {
     font-family: $text-font;
-    color: $black
+    color: $black;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
 .banner .heading-top b {
@@ -39,6 +41,7 @@
     font-size: 80px;
     color: $purple;
     text-align: right;
+    margin-top: 0;
 }
 
 .banner button {
@@ -50,28 +53,25 @@
     font-weight: 600;
     border: 1px solid $black;
     border-radius: 20px;
-    margin-top: 20px;
 }
 
 // iPad styles
 @media only screen and (max-width: $ipad-size) {
-    .banner {
-        display: flex;
-        justify-content: space-between;
+    .banner img {
+        width: 620px;
+        left: -230px;
     }
 
-    .banner img {
-        width: 200px;
+    .banner .heading-top {
+       margin-top: 60px;
     }
+
+}
+
+@media only screen and (max-width: $ipad-size-sm) {
 
     .banner h1 {
-        font-size: 40px;
-        color: darken($purple, 10%);
-        text-align: right;
-    }
-
-    .banner button {
-        font-size: 20px;
+        font-size: 60px;
     }
 
 }
