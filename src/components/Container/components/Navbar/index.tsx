@@ -1,14 +1,12 @@
 import React from 'react';
 import './styles.scss';
 import blackLogo from '../../../../assets/logo/black.png';
-// import purpleLogo from '../../../../assets/logo/purple.png';
 
 interface NavbarInterface {
     selected: string;
 }
 
 const Navbar : React.FC<NavbarInterface> = ({ selected }) => {
-    // const logo = selected === 'landing' ? purpleLogo : blackLogo;
     return (
         <div className="navbar-container">
             <ul className="navbar">
