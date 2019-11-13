@@ -102,7 +102,8 @@
 // content
 
 .content-wrapper {
-    padding: 40px $web-padding;
+    width: 1000px;
+    margin: auto;
 }
 
 .content-wrapper .intro {
@@ -124,6 +125,7 @@
 // mobile styles
 @media only screen and (max-width: $mob-size) {
     .content-wrapper {
+        width: 80%;
         padding: 20px $mob-padding;
     }
 
