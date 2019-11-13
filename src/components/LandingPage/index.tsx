@@ -1,9 +1,10 @@
 import React from 'react';
 import './styles.scss';
-import cutie from '../../assets/cuties/cutie2.png';
+// import cutie from '../../assets/cuties/cutie2.png';
 import playIcon from '../../assets/features/play.png';
 import friendsIcon from '../../assets/features/play-with-friends.png';
 import shopingIcon from '../../assets/features/shop.png';
+import cutie from './images/calcumon.png';
 
 import Container from '../Container';
 import LandingPageFeature, {LandingPageFeatureProps} from './components/LandingPageFeature'

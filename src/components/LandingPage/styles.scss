@@ -7,12 +7,15 @@
 // banner
 .banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 40px $web-padding 0;
 }
 
 .banner img {
-    width: 250px;
+    width: 750px;
+    position: absolute;
+    top: 40px;
+    left: -270px;
 }
 
 .banner-divider {
