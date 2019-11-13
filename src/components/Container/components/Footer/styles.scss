@@ -19,14 +19,21 @@ $footer-bg : linear-gradient( rgba(255, 255, 255, 0.3), rgba(255,255,255,1));
 }
 
 .footer-container input, .footer-container button {
-    padding: 10px 20px;
+    padding: 20px 60px;
     border: none;
     font-size: 22px;
+    border: 1px solid $black;
 }
 
 .footer-container button {
     background-color: $purple;
     font-weight: bolder;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+}
+
+.footer-container input {
+    border-radius: 20px 0 0 20px;
 }
 
 // iPad styles
