@@ -1,10 +1,13 @@
 @import '../../common.scss';
 
+.wrapper {
+    height: 90vh;
+    background: url("./images/bottomCurve.svg") bottom right no-repeat, white;
+}
 // banner
 .banner {
     display: flex;
     justify-content: space-between;
-    background-color: $yellow-light;
     padding: 40px $web-padding 0;
 }
 
@@ -19,21 +22,31 @@
     background-color: $yellow-light;
 }
 
+.banner .heading-top {
+    font-family: $text-font;
+    color: $black
+}
+
+.banner .heading-top b {
+    font-family: $text-font-bold;
+}
+
 .banner h1 {
     font-family: $heading-font;
     font-size: 80px;
-    color: $white;
+    color: $purple;
     text-align: right;
 }
 
 .banner button {
     float: right;
-    padding: 20px 40px;
-    background-color: $purple;
-    color: $white;
+    padding: 20px 60px;
+    background-color: transparent;
+    color: $black;
     font-size: 35px;
     font-weight: 600;
-    border: none;
+    border: 1px solid $black;
+    border-radius: 20px;
     margin-top: 20px;
 }
 
@@ -42,7 +55,6 @@
     .banner {
         display: flex;
         justify-content: space-between;
-        background-color: $yellow-light;
     }
 
     .banner img {
@@ -73,7 +85,6 @@
 
     .banner h1 {
         font-size: 20px;
-        color: darken($purple, 10%);
         text-align: right;
     }
 

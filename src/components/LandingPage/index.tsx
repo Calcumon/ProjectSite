@@ -36,18 +36,19 @@ const LandingPage : React.FC = () => {
             i: 3,
         }
     ]
-
     return (
         <Container currentPage="landing" bgColor="whitebg">
+            <div className="wrapper">
             <div className="banner">
                 <img src={ cutie } alt="A cute little monster"/>
                 <div>
-                    <h1>MATH, BUT IN A</h1>
+                    <h1 className="heading-top"><b>math</b>, but in a</h1>
                     <h1>PLAYGROUND</h1>
-                    <button>TRY THE APP > </button>
+                    <button>try the app > </button>
                 </div>
             </div>
-            <div className="banner-divider"></div>
+            </div>
+            {/* <div className="banner-divider"></div> */}
             <div className="content-wrapper">
                 <div className="intro">
                     <h2>Creative learning is our future.</h2>
@@ -61,7 +62,7 @@ const LandingPage : React.FC = () => {
                                                                                                     description={ description } 
                                                                                                     image={ image }
                                                                                                     i={ i } 
-                                                                                                    key={ i } /> )}
+                                                                                        key={ i } /> )}
             </div>
         </Container>
     )
