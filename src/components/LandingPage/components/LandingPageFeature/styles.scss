@@ -5,19 +5,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 8em;
-    margin-bottom: 30px;
-    height: 250px;
+    margin-bottom: 50px;
+    height:300px;
     border-radius: 15px;
 }
 
 .feature img {
-    width: 200px;
+    width: 300px;
 }
 
 .featureText {
-    // margin-left: 60px;
-    width: 60%;
+    width: 50%;
 }
 
 .featureText h2 {
@@ -30,6 +28,33 @@
 }
 
 // mobile styles
+@media only screen and (max-width: $ipad-landscape) {
+    .feature {
+        padding: 10px;
+        margin-bottom: 40px;
+        height: 200px;
+    }
+
+    .feature img {
+        width: 200px;
+        padding: 0 20px;
+    }
+
+    .featureText {
+        margin-left: 10px;
+        width: 50%;
+    }
+
+    .featureText h2 {
+        font-size: 30px;
+    }
+
+    .featureText p {
+        font-size: 20px;
+    }
+}
+
+// mobile styles
 @media only screen and (max-width: $mob-size) {
     .feature {
         padding: 10px;
@@ -39,13 +64,13 @@
 
     .feature img {
         // display: none;
-        width: 60px;
+        width: 200px;
         padding: 0 20px;
     }
 
     .featureText {
         margin-left: 10px;
-        width: 100%;
+        width: 50%;
     }
 
     .featureText h2 {

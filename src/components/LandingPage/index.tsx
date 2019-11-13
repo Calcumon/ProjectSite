@@ -15,7 +15,7 @@ const LandingPage : React.FC = () => {
         {
             title: "Kids love it.",
             description: "They steer their car into the right answer while speed racing in our app!",
-            image: "",
+            image: friendsIcon,
             i: 0,
         },
         {

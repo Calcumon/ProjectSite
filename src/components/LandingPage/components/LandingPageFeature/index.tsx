@@ -10,7 +10,7 @@ export interface LandingPageFeatureProps {
 
 const LandingPageFeature : React.FC<LandingPageFeatureProps> = ({ title, description, image, i }) => {
     if (i%2 === 0) {
-        return <div className="feature hardwhitebg">
+        return <div className="feature">
             <div className="featureText">
                 <h2>{ title }</h2>
                 <p>{ description }</p>
@@ -20,7 +20,7 @@ const LandingPageFeature : React.FC<LandingPageFeatureProps> = ({ title, descrip
     }
     
     return (
-        <div className="feature hardwhitebg">
+        <div className="feature">
             <img src={ image } alt={ title }/>
             <div className="featureText">
                 <h2>{ title }</h2>
