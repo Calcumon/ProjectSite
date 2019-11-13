@@ -1,5 +1,7 @@
 @import '../../../../common.scss';
 
+
+
 /* feature */
 .feature {
     display: flex;
@@ -11,11 +13,12 @@
 }
 
 .feature img {
-    width: 300px;
+    width: 380px;
 }
 
 .featureText {
     width: 50%;
+    margin-right: 40px;
 }
 
 .featureText h2 {
@@ -25,6 +28,15 @@
 
 .featureText p {
     font-size: 24px;
+    line-height: 40px;
+}
+
+
+
+@media only screen and (max-width: 1366px) {
+    .feature img {
+        width: 300px;
+    }
 }
 
 // mobile styles

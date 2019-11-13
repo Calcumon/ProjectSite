@@ -120,20 +120,42 @@
 }
 
 .content-wrapper .intro h2 {
-    font-size: 54px;
+    font-size: 60px;
+    margin-bottom: 40px;
     font-family: $text-font-bold;
-    margin-bottom: 30px;
 }
 
 
 .content-wrapper .intro p {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 44px;
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .content-wrapper .intro h2 {
+        font-size: 54px;
+        margin-bottom: 30px;
+    }
+    
+    .content-wrapper .intro p {
+        font-size: 24px;
+        line-height: 40px;
+    }
 }
 
 @media only screen and (max-width: $ipad-size-sm) {
     .content-wrapper {
         width: 80%;
+    }
+
+    .content-wrapper .intro h2 {
+        font-size: 44px;
+    }
+
+    .content-wrapper .intro p {
+        font-size: 22px;
+        line-height: 38px;
     }
 }
 
