@@ -111,21 +111,26 @@
 }
 
 .content-wrapper .intro h2 {
-    font-size: 50px;
-    text-align: center;
+    font-size: 54px;
+    font-family: $text-font-bold;
+    margin-bottom: 30px;
 }
 
 
 .content-wrapper .intro p {
     font-size: 24px;
-    padding: 0 20px;
+    line-height: 40px;
 }
 
+@media only screen and (max-width: $ipad-size-sm) {
+    .content-wrapper {
+        width: 80%;
+    }
+}
 
 // mobile styles
 @media only screen and (max-width: $mob-size) {
     .content-wrapper {
-        width: 80%;
         padding: 20px $mob-padding;
     }
 
@@ -142,6 +147,6 @@
     .content-wrapper .intro p {
         font-size: 14px;
         padding: 0;
-        line-height: 34px;
+        line-height: 24px;
     }
 }
