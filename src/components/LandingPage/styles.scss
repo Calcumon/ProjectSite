@@ -78,26 +78,25 @@
 
 // mobile styles
 @media only screen and (max-width: $mob-size) {
+    .wrapper {
+        height: 50vh;
+    }
+
     .banner {
         padding: 40px $mob-padding 0;
     }
 
     .banner img {
-        width: 80px;
+        width: 250px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-55%);
+        top: 100px;
     }
 
-    .banner h1 {
-        font-size: 20px;
-        text-align: right;
+    .banner div {
+        display: none;
     }
-
-    .banner button {
-        padding: 10px 20px;
-        font-size: 15px;
-        margin-top: 10px;
-
-    }
-
 }
 
 // content
