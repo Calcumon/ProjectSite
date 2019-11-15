@@ -1,52 +1,31 @@
 {
-  "name": "calcumon-frontend",
-  "version": "0.1.0",
+  "name": "api",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@types/chai-enzyme": "^0.6.7",
-    "@types/classnames": "^2.2.9",
-    "@types/enzyme": "^3.10.3",
-    "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.3",
-    "@types/react": "16.9.2",
-    "@types/react-dom": "16.9.0",
-    "@types/react-router-dom": "^5.1.0",
-    "chai-enzyme": "^1.0.0-beta.1",
-    "classnames": "^2.2.6",
-    "node-sass": "^4.12.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.1.1",
-    "typescript": "3.6.2"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "devstart": "(node ./bin/www) & (cd client && npm run start)",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "start": "node ./bin/www"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "proxy": "http://localhost:9000",
+  "dependencies": {
+    "acorn": "^7.1.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.1.0",
+    "email-validator": "^2.0.4",
+    "express": "^4.16.4",
+    "helmet": "^3.21.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mailchimp": "^1.2.1",
+    "mailchimp-api-v3": "^1.13.1",
+    "mandrill-api": "^1.0.45",
+    "morgan": "~1.9.1",
+    "request": "^2.88.0",
+    "stripe": "^7.10.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "css-loader": "^3.2.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-15": "^1.4.1",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "style-loader": "^1.0.0"
-  }
+  "devDependencies": {}
 }

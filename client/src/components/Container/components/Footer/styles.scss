@@ -1,0 +1,74 @@
+@import '../../../../common.scss';
+
+$footer-bg : linear-gradient( rgba(255, 255, 255, 0.3), rgba(255,255,255,1));
+
+.footer-container {
+    background: $footer-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+
+.footer-container h2 {
+    font-family: $heading-font;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-container input, .footer-container button {
+    padding: 20px 60px;
+    border: none;
+    font-size: 22px;
+    border: 1px solid $black;
+}
+
+.footer-container button {
+    background-color: $purple;
+    font-weight: bolder;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+}
+
+.footer-container input {
+    border-radius: 20px 0 0 20px;
+}
+
+// iPad styles
+@media only screen and (max-width: $ipad-size) {
+    
+    .footer-container {
+        margin-top: 40px;
+    }
+
+    .footer-container h2 {
+        font-size: 20px;
+    }
+
+    .footer-container input, .footer-container button {
+        font-size: 14px;
+    }
+}
+
+// mobile styles
+@media only screen and (max-width: $mob-size) {
+        
+    .footer-container {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+
+    .footer-container h2 {
+        font-size: 12px;
+    }
+
+    .footer-container input {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .footer-container button  {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
