@@ -41,7 +41,7 @@ const LandingPage : React.FC = () => {
             <BannerWrapper image={cutie}>
                         <h1 className="heading-top"><b>math</b>, but in a</h1>
                         <h1>PLAYGROUND</h1>
-                        <button>try the app > </button>
+                        <button className="banner-button">try the app > </button>
             </BannerWrapper>
             <div className="content-wrapper">
                 <div className="intro">

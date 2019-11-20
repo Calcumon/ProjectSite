@@ -1,18 +1,18 @@
 @import '../../common.scss';
 
 
-.banner .heading-top {
+.heading-top {
     font-family: $text-font;
     color: $black;
     margin-top: 80px;
     margin-bottom: 20px;
 }
 
-.banner .heading-top b {
+.heading-top b {
     font-family: $text-font-bold;
 }
 
-.banner h1 {
+h1 {
     font-family: $heading-font;
     font-size: 80px;
     color: $purple;
@@ -20,7 +20,7 @@
     margin-top: 0;
 }
 
-.banner button {
+.banner-button {
     float: right;
     padding: 20px 60px;
     background-color: transparent;
@@ -34,7 +34,7 @@
 // iPad styles
 @media only screen and (max-width: $ipad-size) {
 
-    .banner .heading-top {
+    .heading-top {
        margin-top: 60px;
     }
 
@@ -42,7 +42,7 @@
 
 @media only screen and (max-width: $ipad-size-sm) {
 
-    .banner h1 {
+    h1 {
         font-size: 60px;
     }
 
