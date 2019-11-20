@@ -15,12 +15,28 @@ $navbar-bg : linear-gradient( rgba(246,248,255,0.1), rgba(249,213,122,1));
     padding: 60px $web-padding 0;
     list-style-type: None;
     font-family: $text-font;
+    align-items: baseline;
 }
 
 .navbar img {
     width: 300px;
 }
 
+.navbar li{
+    margin-left: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Montserrat-semibold';
+    color: $black;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: $purple;
+    cursor: pointer;
+}
 // mobile styles
 @media only screen and (max-width: $mob-size) {
     .navbar {
@@ -30,5 +46,9 @@ $navbar-bg : linear-gradient( rgba(246,248,255,0.1), rgba(249,213,122,1));
 
     .navbar img {
         width: 200px;
+    }
+
+    .navbar li {
+        margin-left: 10px;
     }
 }

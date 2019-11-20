@@ -1,6 +1,6 @@
 @import '../../../../common.scss';
 
-$footer-bg : linear-gradient( rgba(255, 255, 255, 0.3), rgba(255,255,255,1));
+$footer-bg : linear-gradient( rgba(255, 255, 255, 0.1), rgba(255,255,255,1));
 
 .footer-container {
     background: $footer-bg;
@@ -9,11 +9,12 @@ $footer-bg : linear-gradient( rgba(255, 255, 255, 0.3), rgba(255,255,255,1));
     align-items: center;
     justify-content: space-evenly;
     padding: 40px 0;
+    margin-top: 150px;
 }
 
 .footer-container h2 {
     font-family: $heading-font;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 40px;
 }
 
@@ -21,14 +22,13 @@ $footer-bg : linear-gradient( rgba(255, 255, 255, 0.3), rgba(255,255,255,1));
     padding: 20px 60px;
     border: none;
     font-size: 22px;
-    border: 1px solid $black;
 }
 
 .footer-container button {
     background-color: $purple;
     font-weight: bolder;
     border-radius: 0 20px 20px 0;
-    border-left: none;
+    color: $white;
 }
 
 .resubmit {
@@ -38,6 +38,7 @@ $footer-bg : linear-gradient( rgba(255, 255, 255, 0.3), rgba(255,255,255,1));
 
 .footer-container input {
     border-radius: 20px 0 0 20px;
+    background: #f5f7ff;
 }
 
 // iPad styles
