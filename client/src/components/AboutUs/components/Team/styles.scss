@@ -138,7 +138,7 @@
     .team p {
         font-size: 20px;
         padding: 0;
-        line-height: 30px;
+        line-height: 20px;
     }
     // info on team cards
     .team-cards .info {
@@ -198,6 +198,6 @@
 @media only screen and (max-width: 330px) {
      // info on team cards
      .team-cards .info {
-        width: 210px;
+        width: 200px;
     }
 }
