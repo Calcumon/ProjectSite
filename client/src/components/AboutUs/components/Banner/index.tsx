@@ -6,7 +6,7 @@ import cutie from '../../../../assets/cuties/cutie3.png'
 const Banner : React.FC = () => {
     return (
         <BannerWrapper image={cutie}>
-            <h1>Our mission is to creatively reshape the learning process.</h1>
+            <h1 className="mission">Our mission is to creatively reshape the learning process.</h1>
         </BannerWrapper>
     )
 }

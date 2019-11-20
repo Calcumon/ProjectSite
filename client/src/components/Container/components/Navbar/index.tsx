@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.scss';
 import blackLogo from '../../../../assets/logo/black.png';
 
@@ -13,8 +14,8 @@ const Navbar : React.FC<NavbarInterface> = ({ selected }) => {
                 {/* <li> Milestones </li> */}
                 {/* <li> FAQ </li> */}
                 {/* <li> Team </li> */}
-                {/* <li> Story </li> */}
-                <li> <img src={ blackLogo } alt="our logo" /></li>
+                <li><Link to="/about"> About Us </Link> </li>
+                <li><Link to="/"> <img src={ blackLogo } alt="our logo" /> </Link></li>
             </ul>
         </div>
     )
