@@ -10,7 +10,6 @@ const Footer : React.FC = () => {
     // join button is pressed
     if ( isButtonPressed ) {
         // send email to backend
-        console.log("In the frontend")
         fetch("http://localhost:9000/waitlist", {
             method: 'post',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -24,7 +23,6 @@ const Footer : React.FC = () => {
             }
         })
           .catch((err) => {
-              console.log(err)
               setError(true)
           })
     }
@@ -35,12 +33,13 @@ const Footer : React.FC = () => {
         return ( 
                 <div className="footer-container">
                     <h2>You are on the waitlist!</h2>
+                    <button className="resubmit" onClick={ () => {
+                        setButtonPressed(false) 
+                        setEmail('')
+                        setSuccess(false)
+                    }}> Ok! </button>
                 </div> 
             )
-    }
-
-    if ( error ) {
-        // return an error component
     }
 
     return (

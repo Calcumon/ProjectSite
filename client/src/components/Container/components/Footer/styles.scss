@@ -31,6 +31,11 @@ $footer-bg : linear-gradient( rgba(255, 255, 255, 0.3), rgba(255,255,255,1));
     border-left: none;
 }
 
+.resubmit {
+    border-radius: 20px 20px 20px 20px !important;
+    border-left: 1px solid $black !important;
+}
+
 .footer-container input {
     border-radius: 20px 0 0 20px;
 }
