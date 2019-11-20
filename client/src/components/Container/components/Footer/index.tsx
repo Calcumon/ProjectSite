@@ -9,6 +9,7 @@ const Footer: React.FC = () => {
   const [success, setSuccess] = useState(false);
   // join button is pressed
   if (isButtonPressed) {
+    console.log("button pressed")
     // send email to backend
     fetch("http://localhost:9000/waitlist", {
       method: "post",
@@ -27,6 +28,7 @@ const Footer: React.FC = () => {
         }
       })
       .catch(err => {
+        console.log(err)
         setError(true);
       });
   }
@@ -57,7 +59,7 @@ const Footer: React.FC = () => {
       <h2>WE'RE LAUNCHING SOON!</h2>
       <div>
         <input placeholder="enter your email"></input>
-        <button>join the waitlist</button>
+        <button onClick={() => setButtonPressed(true) }>join the waitlist</button>
       </div>
       {error ? "Try again!" : ""}
     </div>
