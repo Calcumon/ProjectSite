@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.scss';
 import playIcon from '../../assets/features/play.png';
 import friendsIcon from '../../assets/features/play-with-friends.png';
@@ -9,7 +9,13 @@ import Container from '../Container';
 import LandingPageFeature, {LandingPageFeatureProps} from './components/LandingPageFeature'
 import BannerWrapper from '../BannerWrapper'
 
+
+import * as smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
+
 const LandingPage : React.FC = () => {
+    const [ scrollToBottom, setScrollToBottom] = useState(false)
+
     const LandingPageFeatureData: LandingPageFeatureProps[] = [
         {
             title: "Kids love it.",
@@ -36,12 +42,22 @@ const LandingPage : React.FC = () => {
             i: 3,
         }
     ]
+
+    if ( scrollToBottom ) {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            left: 0,
+            behavior: 'smooth'
+          })
+    }
+
+
     return (
         <Container currentPage="landing" bgColor="whitebg">
             <BannerWrapper image={cutie}>
                         <h1 className="heading-top"><b>math</b>, but in a</h1>
                         <h1>PLAYGROUND</h1>
-                        <button className="banner-button">try the app > </button>
+                        <button onClick={ () => setScrollToBottom(true) } className="banner-button">join the waitlist</button>
             </BannerWrapper>
             <div className="content-wrapper">
                 <div className="intro">
