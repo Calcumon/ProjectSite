@@ -13,11 +13,8 @@ const Footer: React.FC = () => {
     // send email to backend
     fetch("http://localhost:9000/waitlist", {
       method: "post",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: JSON.stringify({ email: email })
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ email })
     })
       .then(async response => {
         const data = await response.json();
