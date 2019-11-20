@@ -16,6 +16,7 @@ const mandrill_client = new mandrill.Mandrill(MANDRILL_KEY);
 
 // Email Route
 router.post("/waitlist", (req, res) => {
+  console.log("in the backend")
   try {
     const { email } = req.body;
     console.log("POSTING: ", email);
