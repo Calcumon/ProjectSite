@@ -76,6 +76,7 @@ const Team : React.FC = () => {
                     </div>
                 </div>
             </div>
+            <p className="team-slogan">We are on <span>YOUR</span> team.</p>
             
         </div>
     )
