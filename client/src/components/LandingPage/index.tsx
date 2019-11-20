@@ -43,7 +43,6 @@ const LandingPage : React.FC = () => {
                         <h1>PLAYGROUND</h1>
                         <button>try the app > </button>
             </BannerWrapper>
-            {/* <div className="banner-divider"></div> */}
             <div className="content-wrapper">
                 <div className="intro">
                     <h2>Creative learning is our future.</h2>
