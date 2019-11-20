@@ -15,6 +15,11 @@ const Team : React.FC = () => {
             <div className="team-cards">
                 <div className="col1">
                     <div>
+                        <div className="info">
+                            <p className="h3">Anisha Jain</p>
+                            <p className="h4">Founder, PM</p>
+                            <p>icons</p>
+                        </div>
                         <img src={anisha} alt="Anisha's picture" />
                     </div>
                     <div >
