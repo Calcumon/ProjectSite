@@ -91,7 +91,6 @@ router.post("/waitlist", (req, res) => {
       },
       function(result) {
         console.log(result);
-        res.json({ status: true });
       },
       function(e) {
         // Mandrill returns the error as an object with name and message keys
@@ -126,6 +125,7 @@ router.post("/waitlist", (req, res) => {
   });
 
   console.log("MADE IT TO RES.JSON IN THE BACKEND");
+  res.json({ status: true });
 });
 
 module.exports = router;
