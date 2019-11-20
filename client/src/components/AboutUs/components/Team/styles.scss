@@ -1,0 +1,122 @@
+@import '../../../../common.scss';
+
+.team {
+    width: 1000px;
+    margin: auto;
+}
+
+.team h1 {
+    margin: 80px 0;
+    text-align: left;
+    font-size: 60px;
+    font-family: $text-font-bold;
+    color: $black;
+}
+
+.team p {
+    font-size: 26px;
+    line-height: 44px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col2 {
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.col3 {
+    margin-top: 200px;
+}
+
+.team-cards img {
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1366px) {
+    .team h1  {
+        font-size: 54px;
+        margin: 30px 0;
+    }
+    
+    .team p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: $ipad-size-sm) {
+    .team {
+        width: 80%;
+    }
+
+    .team h1 {
+        font-size: 44px;
+    }
+
+    .team p {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .team-cards img {
+        width: 200px;
+        padding-bottom: 20px;
+    }
+}
+
+// mobile styles
+@media only screen and (max-width: $ipad-landscape) {
+    .team {
+        padding: 20px $mob-padding;
+        margin: 40px 0;
+    }
+
+    .team h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+    
+    
+    .team p {
+        font-size: 20px;
+        padding: 0;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: $mob-size) {
+    .team {
+        padding: 20px $mob-padding;
+        text-align: center;
+    }
+    
+    .team h1 {
+        font-size: 26px;
+        text-align: left;
+        text-align: center;
+    }
+    
+    
+    .team p {
+        font-size: 18px;
+        padding: 0;
+        line-height: 24px;
+    }
+
+    .team-cards {
+        flex-direction: column;
+    }
+
+    .col2 {
+        margin-top: 0;
+    }
+    
+    .col3 {
+        margin-top: 0;
+    }
+}
