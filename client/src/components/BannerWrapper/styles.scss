@@ -1,0 +1,115 @@
+@import '../../common.scss';
+
+.wrapper {
+    height: 85vh;
+    background: url("./images/bottomCurve.svg") bottom left no-repeat, white;
+}
+// banner
+.banner {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px $web-padding 0;
+}
+
+.banner img {
+    width: 730px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.banner-divider {
+    width: 100%;
+    height: 100px;
+    border-bottom-right-radius: 800%;
+    background-color: $yellow-light;
+}
+
+.banner .heading-top {
+    font-family: $text-font;
+    color: $black;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.banner .heading-top b {
+    font-family: $text-font-bold;
+}
+
+.banner h1 {
+    font-family: $heading-font;
+    font-size: 80px;
+    color: $purple;
+    text-align: right;
+    margin-top: 0;
+}
+
+.banner button {
+    float: right;
+    padding: 20px 60px;
+    background-color: transparent;
+    color: $black;
+    font-size: 35px;
+    font-weight: 600;
+    border: 1px solid $black;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1366px) {
+    .banner img {
+        left: -270px;
+    }
+}
+
+// iPad styles
+@media only screen and (max-width: $ipad-size) {
+    .banner img {
+        width: 620px;
+        left: -230px;
+    }
+
+    .banner .heading-top {
+       margin-top: 60px;
+    }
+
+}
+
+@media only screen and (max-width: $ipad-size-sm) {
+
+    .banner h1 {
+        font-size: 60px;
+    }
+
+}
+
+// mobile styles
+@media only screen and (max-width: $ipad-landscape) {
+    .wrapper {
+        height: 50vh;
+    }
+
+    .banner {
+        padding: 40px $mob-padding 0;
+    }
+
+    .banner img {
+        width: 300px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-55%);
+        top: 150px;
+    }
+
+    .banner div {
+        display: none;
+    }
+}
+
+// mobile styles
+@media only screen and (max-width: $mob-size) {
+
+    .banner img {
+        width: 250px;
+        top: 100px;
+    }
+}

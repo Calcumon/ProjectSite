@@ -7,7 +7,7 @@ import cutie from './images/calcumon.png';
 
 import Container from '../Container';
 import LandingPageFeature, {LandingPageFeatureProps} from './components/LandingPageFeature'
-
+import BannerWrapper from '../BannerWrapper'
 
 const LandingPage : React.FC = () => {
     const LandingPageFeatureData: LandingPageFeatureProps[] = [
@@ -38,16 +38,11 @@ const LandingPage : React.FC = () => {
     ]
     return (
         <Container currentPage="landing" bgColor="whitebg">
-            <div className="wrapper">
-            <div className="banner">
-                <img src={ cutie } alt="A cute little monster"/>
-                <div>
-                    <h1 className="heading-top"><b>math</b>, but in a</h1>
-                    <h1>PLAYGROUND</h1>
-                    <button>try the app > </button>
-                </div>
-            </div>
-            </div>
+            <BannerWrapper image={cutie}>
+                        <h1 className="heading-top"><b>math</b>, but in a</h1>
+                        <h1>PLAYGROUND</h1>
+                        <button>try the app > </button>
+            </BannerWrapper>
             {/* <div className="banner-divider"></div> */}
             <div className="content-wrapper">
                 <div className="intro">
