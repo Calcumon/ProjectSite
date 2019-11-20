@@ -17,3 +17,71 @@
     font-size: 26px;
     line-height: 44px;
 }
+
+
+@media only screen and (max-width: 1366px) {
+    .story h1  {
+        font-size: 54px;
+        margin: 30px 0;
+    }
+    
+    .story p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: $ipad-size-sm) {
+    .story {
+        width: 80%;
+    }
+
+    .story h1 {
+        font-size: 44px;
+    }
+
+    .story p {
+        font-size: 22px;
+        line-height: 38px;
+    }
+}
+
+// mobile styles
+@media only screen and (max-width: $ipad-landscape) {
+    .story {
+        padding: 20px $mob-padding;
+        margin: 40px 0;
+    }
+
+    .story h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+    
+    
+    .story p {
+        font-size: 20px;
+        padding: 0;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: $mob-size) {
+    .story {
+        padding: 20px $mob-padding;
+        text-align: center;
+    }
+    
+    .story h1 {
+        font-size: 26px;
+        text-align: left;
+        text-align: center;
+    }
+    
+    
+    .story p {
+        font-size: 18px;
+        padding: 0;
+        line-height: 24px;
+    }
+}
