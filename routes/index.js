@@ -16,7 +16,7 @@ const mandrill_client = new mandrill.Mandrill(MANDRILL_KEY);
 
 // Email Route
 router.post("/waitlist", (req, res) => {
-  console.log("in the backend")
+  console.log("in the backend");
   try {
     const { email } = req.body;
     console.log("POSTING: ", email);
@@ -36,30 +36,6 @@ router.post("/waitlist", (req, res) => {
     };
 
     const postData = JSON.stringify(data);
-
-    console.log("OPTIONS");
-    var options = {
-      method: "POST",
-      url:
-        "https://" +
-        MAILCHIMP_INT +
-        ".api.mailchimp.com/3.0/lists/" +
-        LIST_ID +
-        "/members",
-      headers: {
-        Authorization: "apikey " + MAILCHIMP_KEY
-      },
-      body: postData
-    };
-
-    console.log("HERE THO BACKEND");
-    request(options, function(error, response, body) {
-      // console.log(error, response, body)
-      if (error) throw new Error(error);
-      console.log(body);
-    });
-
-    console.log("MADE IT TO RES.JSON IN THE BACKEND");
 
     // Send Email
     // TODO:
@@ -126,6 +102,30 @@ router.post("/waitlist", (req, res) => {
     console.log("THERE HAS BEEN AN ERROR:", error);
     throw error;
   }
+
+  console.log("OPTIONS");
+  var options = {
+    method: "POST",
+    url:
+      "https://" +
+      MAILCHIMP_INT +
+      ".api.mailchimp.com/3.0/lists/" +
+      LIST_ID +
+      "/members",
+    headers: {
+      Authorization: "apikey " + MAILCHIMP_KEY
+    },
+    body: postData
+  };
+
+  console.log("HERE THO BACKEND");
+  request(options, function(error, response, body) {
+    // console.log(error, response, body)
+    if (error) throw new Error(error);
+    console.log(body);
+  });
+
+  console.log("MADE IT TO RES.JSON IN THE BACKEND");
 });
 
 module.exports = router;
