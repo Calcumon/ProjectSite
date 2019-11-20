@@ -6,8 +6,8 @@ const Footer : React.FC = () => {
         <div className="footer-container">
             <h2>WE'RE LAUNCHING SOON!</h2>
             <div>
-                <input placeholder="Enter your email"></input>
-                <button>JOIN THE WAITLIST</button>
+                <input placeholder="enter your email"></input>
+                <button>join the waitlist</button>
             </div>
         </div>
     )
