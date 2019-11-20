@@ -1,0 +1,19 @@
+@import '../../../../common.scss';
+
+.story {
+    width: 1000px;
+    margin: auto;
+}
+
+.story h1 {
+    margin: 80px 0;
+    text-align: left;
+    font-size: 60px;
+    font-family: $text-font-bold;
+    color: $black;
+}
+
+.story p {
+    font-size: 26px;
+    line-height: 44px;
+}
