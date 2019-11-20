@@ -1,6 +1,6 @@
 @import '../../../../common.scss';
 
-$footer-bg : linear-gradient( rgba(255, 255, 255, 0.3), rgba(255,255,255,1));
+$footer-bg : linear-gradient( rgba(255, 255, 255, 0.1), rgba(255,255,255,1));
 
 .footer-container {
     background: $footer-bg;
@@ -9,6 +9,7 @@ $footer-bg : linear-gradient( rgba(255, 255, 255, 0.3), rgba(255,255,255,1));
     align-items: center;
     justify-content: space-evenly;
     padding: 40px 0;
+    margin-top: 150px;
 }
 
 .footer-container h2 {
