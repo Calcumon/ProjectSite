@@ -37,6 +37,28 @@ router.post("/waitlist", (req, res) => {
 
     const postData = JSON.stringify(data);
 
+    console.log("OPTIONS");
+    var options = {
+      method: "POST",
+      url:
+        "https://" +
+        MAILCHIMP_INT +
+        ".api.mailchimp.com/3.0/lists/" +
+        LIST_ID +
+        "/members",
+      headers: {
+        Authorization: "apikey " + MAILCHIMP_KEY
+      },
+      body: postData
+    };
+
+    console.log("HERE THO BACKEND");
+    request(options, function(error, response, body) {
+      // console.log(error, response, body)
+      if (error) throw new Error(error);
+      console.log(body);
+    });
+
     // Send Email
     // TODO:
     // need to make calcumon waitlist template
@@ -101,28 +123,6 @@ router.post("/waitlist", (req, res) => {
     console.log("THERE HAS BEEN AN ERROR:", error);
     throw error;
   }
-
-  console.log("OPTIONS");
-  var options = {
-    method: "POST",
-    url:
-      "https://" +
-      MAILCHIMP_INT +
-      ".api.mailchimp.com/3.0/lists/" +
-      LIST_ID +
-      "/members",
-    headers: {
-      Authorization: "apikey " + MAILCHIMP_KEY
-    },
-    body: postData
-  };
-
-  console.log("HERE THO BACKEND");
-  request(options, function(error, response, body) {
-    // console.log(error, response, body)
-    if (error) throw new Error(error);
-    console.log(body);
-  });
 
   console.log("MADE IT TO RES.JSON IN THE BACKEND");
   res.json({ status: true });
