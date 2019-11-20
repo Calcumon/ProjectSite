@@ -28,6 +28,8 @@ const Footer: React.FC = () => {
         console.log(err)
         setError(true);
       });
+  
+      setButtonPressed(false)
   }
 
   // email is saved to backend
@@ -55,7 +57,7 @@ const Footer: React.FC = () => {
     <div className="footer-container">
       <h2>WE'RE LAUNCHING SOON!</h2>
       <div>
-        <input placeholder="enter your email"></input>
+        <input onChange={(e) => setEmail(e.target.value) } placeholder="enter your email"></input>
         <button onClick={() => setButtonPressed(true) }>join the waitlist</button>
       </div>
       {error ? "Try again!" : ""}
