@@ -63,7 +63,7 @@ router.post("/waitlist", (req, res) => {
     // TODO:
     // need to make calcumon waitlist template
     // need to change to calcumon waitlist template
-    var template_name = "credit-waitlist";
+    var template_name = "calcumon-waitlist";
     var template_content = [
       {
         FNAME: ""
