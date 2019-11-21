@@ -77,7 +77,7 @@ router.post("/waitlist", (req, res) => {
       from_name: "Calcumon",
       to: [{ email: email }],
       subject:
-        "WELCOME TO THE CALCUMON FAMILY! You’ve been added to our waitlist! :confetti:"
+        "WELCOME TO THE CALCUMON FAMILY!"
     };
 
     // Set time to send email
