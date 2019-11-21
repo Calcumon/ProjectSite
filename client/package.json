@@ -4,6 +4,10 @@
   "private": true,
   "proxy": "http://localhost:9000",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
     "@types/chai-enzyme": "^0.6.7",
     "@types/classnames": "^2.2.9",
     "@types/enzyme": "^3.10.3",
@@ -14,6 +18,7 @@
     "@types/react-burger-menu": "^2.6.0",
     "@types/react-dom": "16.9.0",
     "@types/react-router-dom": "^5.1.0",
+    "@types/smoothscroll-polyfill": "^0.3.1",
     "chai-enzyme": "^1.0.0-beta.1",
     "classnames": "^2.2.6",
     "node-sass": "^4.12.0",
@@ -23,6 +28,7 @@
     "react-responsive-navbar": "^1.0.11",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "typescript": "3.6.2"
   },
   "scripts": {
