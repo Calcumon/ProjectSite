@@ -59,6 +59,9 @@ router.post("/waitlist", (req, res) => {
       console.log(body);
     });
 
+    console.log("MADE IT TO RES.JSON IN THE BACKEND");
+    res.json({ status: true });
+
     // Send Email
     // TODO:
     // need to make calcumon waitlist template
@@ -73,7 +76,8 @@ router.post("/waitlist", (req, res) => {
       from_email: FROM_EMAIL,
       from_name: "Calcumon",
       to: [{ email: email }],
-      subject: "Math, but it's a playground!"
+      subject:
+        "WELCOME TO THE CALCUMON FAMILY! You’ve been added to our waitlist! :confetti:"
     };
 
     // Set time to send email
@@ -123,9 +127,6 @@ router.post("/waitlist", (req, res) => {
     console.log("THERE HAS BEEN AN ERROR:", error);
     throw error;
   }
-
-  console.log("MADE IT TO RES.JSON IN THE BACKEND");
-  res.json({ status: true });
 });
 
 module.exports = router;
