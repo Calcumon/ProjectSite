@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* // Theme colors: */
+/* left, right padding */
+/* Theme fonts: */
+/* screen max-width sizes */
+/* set general font style */
+* {
+  font-family: "Montserrat";
+}
+
+/* background styles: */
+.blackbg {
+  background-color: #363635;
+}
+
+.whitebg {
+  background-color: #F6F8FF;
+}
+
+.hardwhitebg {
+  background-color: white;
+}
+
+.pinkbg {
+  background-color: #f2a7a6;
+}
+
+.orangebg {
+  background-color: #f7c896;
+}
+
+.bluebg {
+  background-color: #a6dbdd;
+}
+
+.greenbg {
+  background-color: #d6f091;
+}
+
+.purplebg {
+  background-color: #aaa2db;
+}
+
+.yellowbg {
+  background-color: #fadb86;
+}
+
+.footer-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(white));
+  background: linear-gradient(rgba(255, 255, 255, 0.1), white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 40px 0;
+  margin-top: 150px;
+}
+
+.footer-container h2 {
+  font-family: "Bungee";
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-container input, .footer-container button {
+  padding: 20px 60px;
+  border: none;
+  font-size: 22px;
+}
+
+.footer-container button {
+  background-color: #aaa2db;
+  font-weight: bolder;
+  border-radius: 0 20px 20px 0;
+  color: #F6F8FF;
+}
+
+.footer-container input {
+  border-radius: 20px 0 0 20px;
+  background: #f5f7ff;
+}
+
+@media only screen and (max-width: 1350px) {
+  .footer-container {
+    margin-top: 40px;
+  }
+  .footer-container h2 {
+    font-size: 20px;
+  }
+  .footer-container input, .footer-container button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-container {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  .footer-container h2 {
+    font-size: 12px;
+  }
+  .footer-container input {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .footer-container button {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

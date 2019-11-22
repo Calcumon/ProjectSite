@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* // Theme colors: */
+/* left, right padding */
+/* Theme fonts: */
+/* screen max-width sizes */
+/* set general font style */
+* {
+  font-family: "Montserrat";
+}
+
+/* background styles: */
+.blackbg {
+  background-color: #363635;
+}
+
+.whitebg {
+  background-color: #F6F8FF;
+}
+
+.hardwhitebg {
+  background-color: white;
+}
+
+.pinkbg {
+  background-color: #f2a7a6;
+}
+
+.orangebg {
+  background-color: #f7c896;
+}
+
+.bluebg {
+  background-color: #a6dbdd;
+}
+
+.greenbg {
+  background-color: #d6f091;
+}
+
+.purplebg {
+  background-color: #aaa2db;
+}
+
+.yellowbg {
+  background-color: #fadb86;
+}
+
+.wrapper {
+  height: 85vh;
+  background: url("./images/bottomCurve.svg") bottom left no-repeat, white;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 40px 150px 0;
+}
+
+.banner img {
+  width: 730px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+.banner-divider {
+  width: 100%;
+  height: 100px;
+  border-bottom-right-radius: 800%;
+  background-color: #f9d57a;
+}
+
+@media only screen and (max-width: 1366px) {
+  .banner img {
+    left: -270px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .banner img {
+    width: 620px;
+    left: -230px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    height: 50vh;
+  }
+  .banner {
+    padding: 40px 30px 0;
+  }
+  .banner img {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-55%);
+            transform: translateX(-55%);
+    top: 150px;
+  }
+  .banner div {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner img {
+    width: 250px;
+    top: 100px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
