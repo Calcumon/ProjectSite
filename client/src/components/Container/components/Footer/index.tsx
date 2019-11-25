@@ -9,11 +9,17 @@ const Footer: React.FC = () => {
   const [success, setSuccess] = useState(false);
   // join button is pressed
   if (isButtonPressed) {
-    console.log("button pressed")
+    console.log("button pressed");
     // send email to backend
-    fetch("http://localhost:9000/waitlist", {
+    // Development
+    // fetch("http://localhost:9000/waitlist", {
+    // Production
+    fetch("/waitlist", {
       method: "post",
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
       body: JSON.stringify({ email })
     })
       .then(async response => {
@@ -25,11 +31,11 @@ const Footer: React.FC = () => {
         }
       })
       .catch(err => {
-        console.log(err)
+        console.log(err);
         setError(true);
       });
-  
-      setButtonPressed(false)
+
+    setButtonPressed(false);
   }
 
   // email is saved to backend
@@ -57,8 +63,13 @@ const Footer: React.FC = () => {
     <div className="footer-container">
       <h2>WE'RE LAUNCHING SOON!</h2>
       <div>
-        <input onChange={(e) => setEmail(e.target.value) } placeholder="enter your email"></input>
-        <button onClick={() => setButtonPressed(true) }>join the waitlist</button>
+        <input
+          onChange={e => setEmail(e.target.value)}
+          placeholder="enter your email"
+        ></input>
+        <button onClick={() => setButtonPressed(true)}>
+          join the waitlist
+        </button>
       </div>
       {error ? "Try again!" : ""}
     </div>
