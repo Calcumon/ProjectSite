@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* // Theme colors: */
+/* left, right padding */
+/* Theme fonts: */
+/* screen max-width sizes */
+/* set general font style */
+* {
+  font-family: "Montserrat";
+}
+
+/* background styles: */
+.blackbg {
+  background-color: #363635;
+}
+
+.whitebg {
+  background-color: #F6F8FF;
+}
+
+.hardwhitebg {
+  background-color: white;
+}
+
+.pinkbg {
+  background-color: #f2a7a6;
+}
+
+.orangebg {
+  background-color: #f7c896;
+}
+
+.bluebg {
+  background-color: #a6dbdd;
+}
+
+.greenbg {
+  background-color: #d6f091;
+}
+
+.purplebg {
+  background-color: #aaa2db;
+}
+
+.yellowbg {
+  background-color: #fadb86;
+}
+
+/* feature */
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.feature img {
+  width: 380px;
+}
+
+.featureText {
+  width: 50%;
+  margin-right: 40px;
+}
+
+.featureText h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.featureText p {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .feature img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .feature {
+    padding: 10px;
+    margin-bottom: 40px;
+    height: 200px;
+  }
+  .feature img {
+    width: 200px;
+    padding: 0 20px;
+  }
+  .featureText {
+    margin-left: 10px;
+    width: 50%;
+  }
+  .featureText h2 {
+    font-size: 30px;
+  }
+  .featureText p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .feature {
+    padding: 10px;
+    margin-bottom: 20px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature:nth-child(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .feature img {
+    width: 200px;
+    padding: 0 20px;
+  }
+  .featureText {
+    margin-left: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .featureText h2 {
+    font-size: 26px;
+  }
+  .featureText p {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

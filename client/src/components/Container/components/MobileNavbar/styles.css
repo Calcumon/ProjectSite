@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* // Theme colors: */
+/* left, right padding */
+/* Theme fonts: */
+/* screen max-width sizes */
+/* set general font style */
+* {
+  font-family: "Montserrat";
+}
+
+/* background styles: */
+.blackbg {
+  background-color: #363635;
+}
+
+.whitebg {
+  background-color: #F6F8FF;
+}
+
+.hardwhitebg {
+  background-color: white;
+}
+
+.pinkbg {
+  background-color: #f2a7a6;
+}
+
+.orangebg {
+  background-color: #f7c896;
+}
+
+.bluebg {
+  background-color: #a6dbdd;
+}
+
+.greenbg {
+  background-color: #d6f091;
+}
+
+.purplebg {
+  background-color: #aaa2db;
+}
+
+.yellowbg {
+  background-color: #fadb86;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 60px;
+  background-color: #F6F8FF;
+  position: fixed;
+  z-index: 5;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 15px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.navbar-mobile a {
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat-semibold';
+  color: white;
+}
+
+.navbar-mobile li {
+  padding-bottom: 30px;
+  list-style: none;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  z-index: 6;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=styles.css.map */

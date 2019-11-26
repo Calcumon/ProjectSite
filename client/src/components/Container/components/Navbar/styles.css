@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* // Theme colors: */
+/* left, right padding */
+/* Theme fonts: */
+/* screen max-width sizes */
+/* set general font style */
+* {
+  font-family: "Montserrat";
+}
+
+/* background styles: */
+.blackbg {
+  background-color: #363635;
+}
+
+.whitebg {
+  background-color: #F6F8FF;
+}
+
+.hardwhitebg {
+  background-color: white;
+}
+
+.pinkbg {
+  background-color: #f2a7a6;
+}
+
+.orangebg {
+  background-color: #f7c896;
+}
+
+.bluebg {
+  background-color: #a6dbdd;
+}
+
+.greenbg {
+  background-color: #d6f091;
+}
+
+.purplebg {
+  background-color: #aaa2db;
+}
+
+.yellowbg {
+  background-color: #fadb86;
+}
+
+.navbar-container {
+  background: white;
+  width: 100%;
+}
+
+.navbar {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 60px 150px 0;
+  list-style-type: None;
+  font-family: "Montserrat";
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.navbar img {
+  width: 300px;
+}
+
+.navbar li {
+  margin-left: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: 'Montserrat-semibold';
+  color: #363635;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #aaa2db;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar {
+    padding: 20px 30px;
+    padding-top: 24px;
+  }
+  .navbar img {
+    width: 200px;
+  }
+  .navbar li {
+    margin-left: 10px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
