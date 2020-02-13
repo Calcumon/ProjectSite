@@ -27,5 +27,17 @@
     "request": "^2.88.0",
     "stripe": "^7.10.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "1. Clone the repository.     2. Open your terminal      3. `cd` to the repository location     4. Run command: `npm run devstart`",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Calcumon/ProjectSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Calcumon/ProjectSite/issues"
+  },
+  "homepage": "https://github.com/Calcumon/ProjectSite#readme"
 }
