@@ -17,9 +17,10 @@ describe("<LandingPage />", () => {
       </BrowserRouter>
     );
   }
+
   it("has no props", () => {
     const wrapper = createComponent();
-    expect(wrapper.props()).toEqual({});
+    expect(wrapper.find(LandingPage).props()).toEqual({});
   });
 
   it("renders", () => {
