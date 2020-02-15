@@ -5,7 +5,8 @@ import multiPlayerIcon from "../../assets/features/multi-player-icon.png";
 import analyticsIcon from "../../assets/features/analytics-icon.png";
 import mobileIcon from "../../assets/features/mobile-icon.png";
 import bannerImage from "../../assets/banner/banner.png";
-import appButton from "../../assets/banner/app-store.png";
+import appButton from "../../assets/buttons/goToApp.png";
+import webButton from "../../assets/buttons/goToWeb.png";
 import Container from "../Container";
 import LandingPageFeature, {
   LandingPageFeatureProps
@@ -82,6 +83,17 @@ const LandingPage: React.FC = () => {
             self-motivation and instill a passion for solving real world
             problems with math.
           </p>
+          <div className="landing-buttons">
+            <a
+              target="blank"
+              href="https://apps.apple.com/us/app/calcumon/id1455381436"
+            >
+              <img src={appButton} />
+            </a>
+            <a target="blank" href="http://calcumongame.herokuapp.com/">
+              <img src={webButton} />
+            </a>
+          </div>
         </div>
         {LandingPageFeatureData.map(({ title, description, image, i }) => (
           <LandingPageFeature
