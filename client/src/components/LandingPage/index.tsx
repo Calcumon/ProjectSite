@@ -5,6 +5,7 @@ import multiPlayerIcon from '../../assets/features/multi-player-icon.png';
 import analyticsIcon from '../../assets/features/analytics-icon.png';
 import mobileIcon from '../../assets/features/mobile-icon.png';
 import cutie from './images/calcumon.png';
+import appButton from '../../assets/banner/app-store.png'
 import Container from '../Container';
 import LandingPageFeature, { LandingPageFeatureProps } from './components/LandingPageFeature'
 import BannerWrapper from '../BannerWrapper'
@@ -61,12 +62,8 @@ const LandingPage: React.FC = () => {
             <div className="content-wrapper">
                 <div className="intro">
                     <h2>Creative learning is our future.</h2>
-                    <p>Calcumon is an interactive learning platform designed for children and teens.
-                        It covers a wide range of mathematical topics from simple addition and
-                        subtraction to complex linear equations. Calcumon employs classic gamification
-                        techniques to encourage self-motivation and promote math practice outside of the classroom.
+                    <p>Calcumon is an interactive learning platform designed for kids. Calcumon guides them through simple math topics like addition and subtraction all the way up to college level algebra. Calcumon employs a dynamic and engaging gamification model to encourage self-motivation and instill a passion for solving real world problems with math.
                     </p>
-                    {/* buttons */}
                 </div>
                 {LandingPageFeatureData.map(({ title, description, image, i }) => <LandingPageFeature title={title}
                     description={description}
