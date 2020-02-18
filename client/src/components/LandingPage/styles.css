@@ -99,10 +99,12 @@ h1 {
 }
 
 .content-wrapper .intro {
-  margin-bottom: 80px;
+  margin-top: -20px;
+  margin-bottom: 120px;
 }
 
 .content-wrapper .intro h2 {
+  color: #363635;
   font-size: 60px;
   margin-bottom: 40px;
   font-family: "Montserrat-bold";
@@ -116,7 +118,6 @@ h1 {
 @media only screen and (max-width: 1366px) {
   .content-wrapper .intro h2 {
     font-size: 54px;
-    color: #363635;
     margin-bottom: 30px;
   }
   .content-wrapper .intro p {
