@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
 /* // Theme colors: */
 /* left, right padding */
 /* Theme fonts: */
@@ -15,7 +15,7 @@
 }
 
 .whitebg {
-  background-color: #F6F8FF;
+  background-color: #f6f8ff;
 }
 
 .hardwhitebg {
@@ -48,8 +48,7 @@
 
 .banner img {
   width: auto;
-  max-height: 90vh;
-  left: -10vh;
+  max-height: 75vh;
 }
 
 .mission {
@@ -57,7 +56,7 @@
   font-size: 60px;
   color: #aaa2db;
   text-align: right;
-  margin-top: 20vh;
+  margin-top: 10vh;
   width: 70vw;
 }
 
