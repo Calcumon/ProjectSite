@@ -56,10 +56,12 @@ h1 {
 }
 
 .content-wrapper .intro {
-  margin-bottom: 80px;
+  margin-top: -20px;
+  margin-bottom: 120px;
 }
 
 .content-wrapper .intro h2 {
+  color: $black;
   font-size: 60px;
   margin-bottom: 40px;
   font-family: $text-font-bold;
