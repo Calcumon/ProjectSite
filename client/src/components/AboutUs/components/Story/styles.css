@@ -65,6 +65,7 @@
 }
 
 .quote {
+  color: #363635;
   width: 1000px;
   margin: auto;
   font-size: 26px;
@@ -75,13 +76,14 @@ blockquote {
   line-height: 44px;
 }
 
-.quote blockquote:first-child {
+blockquote:first-child {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 25px;
+  line-height: 50px;
 }
 
-.quote blockquote:nth-child(2) {
+blockquote:nth-child(2) {
   font-size: 26px;
 }
 
@@ -92,8 +94,8 @@ blockquote {
 
 .quoteReference {
   font-size: 26px;
-  font-weight: 600;
-  margin-left: 500px;
+  font-weight: 700;
+  float: right;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -108,6 +110,9 @@ blockquote {
 }
 
 @media only screen and (max-width: 1024px) {
+  .quote {
+    width: 80%;
+  }
   .story {
     width: 80%;
   }
