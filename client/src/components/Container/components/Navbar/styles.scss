@@ -11,8 +11,8 @@ $navbar-bg : linear-gradient( rgba(246,248,255,0.1), rgba(249,213,122,1));
 .navbar {
     margin: 0;
     display: flex;
-    justify-content: flex-end;
-    padding: 60px $web-padding 0;
+    justify-content: space-between;
+    padding: 60px 90px 0;
     list-style-type: None;
     font-family: $text-font;
     align-items: baseline;
@@ -30,6 +30,7 @@ $navbar-bg : linear-gradient( rgba(246,248,255,0.1), rgba(249,213,122,1));
     text-decoration: none;
     font-family: 'Montserrat-semibold';
     color: $black;
+    font-size: 22px;
 }
 
 .navbar a:hover {
