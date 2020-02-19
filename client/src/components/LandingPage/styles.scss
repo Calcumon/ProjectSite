@@ -60,30 +60,34 @@ h1 {
   margin: auto;
 }
 
-.content-wrapper .intro {
+.content-wrapper .section {
   margin-top: -20px;
   margin-bottom: 120px;
 }
 
-.content-wrapper .intro h2 {
+.content-wrapper .section h2{
   color: $black;
   font-size: 60px;
   margin-bottom: 40px;
   font-family: $text-font-bold;
 }
 
-.content-wrapper .intro p {
+.content-wrapper .section p {
   font-size: 26px;
   line-height: 44px;
 }
 
+.content-wrapper .features {
+  margin-bottom: 120px;
+}
+
 @media only screen and (max-width: 1366px) {
-  .content-wrapper .intro h2 {
+  .content-wrapper .section h2 {
     font-size: 54px;
     margin-bottom: 30px;
   }
 
-  .content-wrapper .intro p {
+  .content-wrapper .section p {
     font-size: 24px;
     line-height: 40px;
   }
@@ -94,11 +98,11 @@ h1 {
     width: 80%;
   }
 
-  .content-wrapper .intro h2 {
+  .content-wrapper .section h2 {
     font-size: 44px;
   }
 
-  .content-wrapper .intro p {
+  .content-wrapper .section p {
     font-size: 22px;
     line-height: 38px;
   }
@@ -110,16 +114,16 @@ h1 {
     padding: 20px $mob-padding;
   }
 
-  .content-wrapper .intro {
+  .content-wrapper .section {
     margin-bottom: 40px;
   }
 
-  .content-wrapper .intro h2 {
+  .content-wrapper .section h2 {
     font-size: 36px;
     text-align: left;
   }
 
-  .content-wrapper .intro p {
+  .content-wrapper .section p {
     font-size: 20px;
     padding: 0;
     line-height: 30px;
@@ -131,20 +135,24 @@ h1 {
     padding: 20px $mob-padding;
   }
 
-  .content-wrapper .intro {
+  .content-wrapper .section {
     margin-bottom: 40px;
     text-align: center;
   }
 
-  .content-wrapper .intro h2 {
+  .content-wrapper .section h2 {
     font-size: 26px;
     text-align: left;
     text-align: center;
   }
 
-  .content-wrapper .intro p {
+  .content-wrapper .section p {
     font-size: 18px;
     padding: 0;
     line-height: 24px;
   }
+}
+
+.content-wrapper .email {
+  color: $purple;
 }
