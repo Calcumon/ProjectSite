@@ -11,13 +11,6 @@
   padding: 40px $web-padding 0;
 }
 
-.banner img {
-  width: 730px;
-  position: absolute;
-  top: 40px;
-  left: 20px;
-}
-
 .banner-divider {
   width: 100%;
   height: 100px;
@@ -26,17 +19,14 @@
 }
 
 @media only screen and (max-width: 1366px) {
-  .banner img {
-    left: -270px;
+  .banner {
+    justify-content: center;
   }
 }
 
 // iPad styles
 @media only screen and (max-width: $ipad-size) {
-  .banner img {
-    width: 620px;
-    left: -230px;
-  }
+
 }
 
 // mobile styles
@@ -49,14 +39,6 @@
     padding: 40px $mob-padding 0;
   }
 
-  .banner img {
-    width: 300px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-55%);
-    top: 150px;
-  }
-
   .banner div {
     display: none;
   }
@@ -64,8 +46,5 @@
 
 // mobile styles
 @media only screen and (max-width: $mob-size) {
-  .banner img {
-    width: 250px;
-    top: 100px;
-  }
+
 }

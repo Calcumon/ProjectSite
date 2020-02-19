@@ -62,7 +62,7 @@ const LandingPage: React.FC = () => {
     <Container currentPage="landing" bgColor="whitebg">
       <BannerWrapper image={bannerImage}>
         <h1 className="heading-top">
-          <b>math</b>, but in a
+          <span className="mathSpan">math</span>, but in a
         </h1>
         <h1>PLAYGROUND</h1>
         <button
