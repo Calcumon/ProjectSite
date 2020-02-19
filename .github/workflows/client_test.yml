@@ -16,6 +16,6 @@ jobs:
     - name: Run react-scripts test
       working-directory: client
       run: |
-        npm test
         npm install
+        npm test
         
