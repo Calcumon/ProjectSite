@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
 /* // Theme colors: */
 /* left, right padding */
 /* Theme fonts: */
@@ -15,7 +15,7 @@
 }
 
 .whitebg {
-  background-color: #F6F8FF;
+  background-color: #f6f8ff;
 }
 
 .hardwhitebg {
@@ -91,7 +91,7 @@
   position: absolute;
   text-align: right;
   width: 280px;
-  color: #F6F8FF;
+  color: #f6f8ff;
 }
 
 .team-cards .info .h3 {

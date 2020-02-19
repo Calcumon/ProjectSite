@@ -1,61 +1,49 @@
-@import '../../../../common.scss';
+@import "../../../../common.scss";
 
 .banner img {
-    width: auto;
-    max-height: 90vh;
-    left: -10vh;
+  width: 40vw;
+  max-height: 60vh;
+  margin-right: 4vw;
 }
 
 .mission {
-    font-family: "Bungee";
-    font-size: 60px;
-    color: #aaa2db;
-    text-align: right;
-    margin-top: 20vh;
-    width: 70vw;
+  font-family: "Bungee";
+  font-size: 60px;
+  color: #aaa2db;
+  text-align: right;
+  margin-top: 10vh;
+  width: 70vw;
 }
 
-
 @media only screen and (max-width: 1366px) {
-    .banner img {
-        max-height: 80vh;
-        width: auto;
-        left: -10vh;
-    }
 
-    .mission {
-        font-size: 38px;
-        width: 60vw;
-    }
+  .mission {
+    font-size: 38px;
+    width: 60vw;
+  }
 }
 
 // iPad styles
 @media only screen and (max-width: $ipad-size) {
-    .banner img {
-        width: auto;
-        max-height: 70vh;
-        left: -2vh;
-    }
-
+  .banner img {
+    width: auto;
+    max-height: 40vh;
+  }
 }
 
 // mobile styles
 @media only screen and (max-width: $ipad-landscape) {
-    .banner img {
-        width: auto;
-        height: 50vh;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-55%);
-        top: 150px;
-    }
+  .banner img {
+    width: auto;
+    position: relative;
+    top: 5vh;
+    height: 35vh;
+  }
 }
 
 // mobile styles
 @media only screen and (max-width: $mob-size) {
-
-    .banner img {
-        width: auto;
-        top: 100px;
-    }
+  .banner img {
+    width: auto;
+  }
 }

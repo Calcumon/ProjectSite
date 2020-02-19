@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap");
 
 /* // Theme colors: */
-$black : #363635;
-$white : #F6F8FF;
-$pink : #f2a7a6;
-$orange : #f7c896;
-$blue : #a6dbdd;
-$green : #d6f091;
-$purple : #aaa2db;
-$yellow : #fadb86; 
-$yellow-light : #f9d57a;
+$black: #363635;
+$white: #f6f8ff;
+$pink: #f2a7a6;
+$orange: #f7c896;
+$blue: #a6dbdd;
+$green: #d6f091;
+$purple: #aaa2db;
+$yellow: #fadb86;
+$yellow-light: #f9d57a;
 $web-padding: 150px; /* left, right padding */
 $ipad-padding: 50px;
 $mob-padding: 30px;
 
 /* Theme fonts: */
-$heading-font: 'Bungee';
-$text-font: 'Montserrat';
-$text-font-bold: 'Montserrat-bold';
+$heading-font: "Bungee";
+$text-font: "Montserrat";
+$text-font-bold: "Montserrat-bold";
 
 /* screen max-width sizes */
 $ipad-size: 1350px;
@@ -28,42 +28,42 @@ $mob-size: 500px;
 
 /* set general font style */
 * {
-    font-family: $text-font;
+  font-family: $text-font;
 }
 
 /* background styles: */
 .blackbg {
-    background-color: $black;
+  background-color: $black;
 }
 
 .whitebg {
-    background-color: $white;
+  background-color: $white;
 }
 
 .hardwhitebg {
-    background-color: white;
+  background-color: white;
 }
 
 .pinkbg {
-    background-color: $pink;
+  background-color: $pink;
 }
 
 .orangebg {
-    background-color: $orange;
+  background-color: $orange;
 }
 
 .bluebg {
-    background-color: $blue;
+  background-color: $blue;
 }
 
 .greenbg {
-    background-color: $green;
+  background-color: $green;
 }
 
 .purplebg {
-    background-color: $purple;
+  background-color: $purple;
 }
 
 .yellowbg {
-    background-color: $yellow;
+  background-color: $yellow;
 }
