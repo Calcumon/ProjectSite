@@ -5,8 +5,8 @@ import multiPlayerIcon from "../../assets/features/multi-player-icon.png";
 import analyticsIcon from "../../assets/features/analytics-icon.png";
 import mobileIcon from "../../assets/features/mobile-icon.png";
 import bannerImage from "../../assets/banner/banner.png";
-import appButton from "../../assets/buttons/goToApp.png";
-import webButton from "../../assets/buttons/goToWeb.png";
+// import appButton from "../../assets/buttons/goToApp.png";
+// import webButton from "../../assets/buttons/goToWeb.png";
 import Container from "../Container";
 import LandingPageFeature, {
   LandingPageFeatureProps
@@ -73,7 +73,7 @@ const LandingPage: React.FC = () => {
         </button>
       </BannerWrapper>
       <div className="content-wrapper">
-        <div className="intro">
+        <div className="section">
           <h2>Creative learning is our future.</h2>
           <p>
             Calcumon is an interactive learning platform designed for kids.
@@ -83,7 +83,7 @@ const LandingPage: React.FC = () => {
             self-motivation and instill a passion for solving real world
             problems with math.
           </p>
-          <div className="landing-buttons">
+          {/* <div className="landing-buttons">
             <a
               target="blank"
               href="https://apps.apple.com/us/app/calcumon/id1455381436"
@@ -93,8 +93,9 @@ const LandingPage: React.FC = () => {
             <a target="blank" href="http://calcumongame.herokuapp.com/">
               <img src={webButton} />
             </a>
-          </div>
+          </div> */}
         </div>
+        <div className="features">
         {LandingPageFeatureData.map(({ title, description, image, i }) => (
           <LandingPageFeature
             title={title}
@@ -104,6 +105,14 @@ const LandingPage: React.FC = () => {
             key={i}
           />
         ))}
+        </div>
+        <div className="section">
+          <h2>Questions?</h2>
+          <p>
+            Reach out to our founder at{" "}
+            <a href="mailto:anishaj037@gmail.com" className="email">anishaj@calcumon.com</a>.
+          </p>
+        </div>
       </div>
     </Container>
   );

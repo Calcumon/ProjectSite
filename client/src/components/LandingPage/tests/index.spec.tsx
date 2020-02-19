@@ -27,7 +27,7 @@ describe("<LandingPage />", () => {
     const wrapper = createComponent();
     expect(wrapper.find(LandingPageFeature)).toHaveLength(4);
     expect(wrapper.find(Container)).toHaveLength(1);
-    expect(wrapper.find("img")).toHaveLength(8); // 2 in container, 1 for each Feature, 2 buttons
+    expect(wrapper.find("img")).toHaveLength(6); // 2 in container, 1 for each Feature, (commented 2 buttons temporarily)
     expect(wrapper.find("h1")).toHaveLength(2);
   });
 });
